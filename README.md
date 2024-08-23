@@ -11,6 +11,42 @@ Nessa etapa vamos desenvolver apenas uma funcionalidade utilizando Node, Websock
 
 ## Arquitetura
 
-## Tecnolcogias
+![arquitetura](https://raw.githubusercontent.com/PedroCF87/suprema-test/main/docs/arquitetura.png)
 
-## Como testar
+## Tecnologias
+
+### Frontend
+
+O frontend foi desenvolvido usando o React com o framework Next.js.
+
+### Backend
+
+O backend foi desenvolvido usando o Node.js com a biblioteca NPM rpc-websockets.
+
+## Fluxograma básico do projeto
+
+![fluxograma](https://raw.githubusercontent.com/PedroCF87/suprema-test/main/docs/fluxograma.png)
+
+## Como executar o projeto
+
+As credenciais de testes serão enviadas por meio do Whatsapp, para manter a segurança do projeto.
+
+A validação das credenciais acontece no backend e foi implementada de uma forma que torna impossível a descoberta das credenciais por meio de engenharia reversa.
+
+Para executar o projeto é preciso instalar as dependências, usando o comando abaixo (execute ele na pasta raiz do repositório, na mesma pasta deste arquivo):
+
+```bash
+npm run install
+```
+
+Após finalizar a instalação das dependências dos projetos de backend e frontend, é possível executar os dois projetos de uma só vez, em modo de desenvolvimento, usando o comando abaixo (na mesma pasta deste arquivo):
+
+```bash
+npm run dev
+```
+
+Ou caso queira executar a versão de produção:
+
+```bash
+npm run start
+```
