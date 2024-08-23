@@ -45,6 +45,30 @@ Após finalizar a instalação das dependências dos projetos de backend e front
 npm run dev
 ```
 
+Você deverá visualizar no console:
+
+```bash
+> suprema-poker-test@1.0.0 dev
+> concurrently "node backend/src/server.js" "cd frontend && npm run dev"
+
+[0] >> Servidor de backend em execução.
+[1] 
+[1] > poker-frontend@1.0.0 dev
+[1] > next dev
+[1] 
+[1]   ▲ Next.js 14.2.6
+[1]   - Local:        http://localhost:3000
+[1] 
+[1]  ✓ Starting...
+[1]  ✓ Ready in 1194ms
+
+```
+
+### Acesse no seu navegador
+
+> [http://localhost:3000](http://localhost:3000)
+
+
 Ou caso queira executar a versão de produção:
 
 ```bash
