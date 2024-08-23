@@ -1,0 +1,14 @@
+{
+    "name": "suprema-poker-test",
+    "version": "1.0.0",
+    "private": true,
+    "author": "Pedro Figueira <pedro@delfos.dev>",
+    "scripts": {
+        "install": "cd backend && npm i && cd ../frontend && npm i",
+        "dev": "concurrently \"node backend/src/server.js\" \"cd frontend && npm run dev\"",
+        "start": "concurrently \"node backend/src/server.js\" \"cd frontend && npm run build && npm run start\""
+    },
+    "dependencies": {
+        "concurrently": "^8.2.2"
+    }
+}

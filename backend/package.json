@@ -1,0 +1,14 @@
+{
+    "name": "poker-backend",
+    "version": "1.0.0",
+    "private": true,
+    "author": "Pedro Figueira <pedro@delfos.dev>",
+    "scripts": {
+        "server": "node src/server.js",
+        "client": "node src/client.js"
+    },
+    "dependencies": {
+        "crypto-js": "^4.2.0",
+        "rpc-websockets": "^7.11.2"
+    }
+}
