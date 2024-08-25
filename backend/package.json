@@ -4,11 +4,12 @@
     "private": true,
     "author": "Pedro Figueira <pedro@delfos.dev>",
     "scripts": {
-        "server": "node src/server.js",
-        "client": "node src/client.js"
+        "server": "node src/server.js"
     },
     "dependencies": {
         "crypto-js": "^4.2.0",
+        "dotenv": "^16.4.5",
+        "jose": "^5.7.0",
         "rpc-websockets": "^7.11.2"
     }
 }

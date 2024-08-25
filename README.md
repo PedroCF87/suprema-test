@@ -25,9 +25,15 @@ O backend foi desenvolvido usando o Node.js com a biblioteca NPM rpc-websockets.
 
 ## Fluxograma básico do projeto
 
-![fluxograma](https://raw.githubusercontent.com/PedroCF87/suprema-test/main/docs/fluxograma.png)
+![fluxograma](https://raw.githubusercontent.com/PedroCF87/suprema-test/main/docs/fluxograma_v2.png)
 
 ## Como executar o projeto
+
+O primeiro passo é compor os arquivos de variáveis de ambiente.
+
+Se for executar os dois serviços de uma só vez, a partir da pasta raiz do repositório, preencha os arquivos ".env" da pasta raiz do repositório (usando o arquivo ".env.example" como base) e o arquivo da pasta do frontend também.
+
+Caso pretenda executar cada um dos serviços separadamente (backend / frontend), preencha os arquivos ".env" da pasta de cada um dos serviços (usando o arquivo ".env.example" como base).
 
 As credenciais de testes serão enviadas por meio do Whatsapp, para manter a segurança do projeto.
 
