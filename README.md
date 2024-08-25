@@ -23,9 +23,15 @@ O frontend foi desenvolvido usando o React com o framework Next.js.
 
 O backend foi desenvolvido usando o Node.js com a biblioteca NPM rpc-websockets.
 
-## Fluxograma básico do projeto
+## Fluxograma do projeto
 
-![fluxograma](https://raw.githubusercontent.com/PedroCF87/suprema-test/main/docs/fluxograma_v2.png)
+![fluxograma v2](https://raw.githubusercontent.com/PedroCF87/suprema-test/main/docs/fluxograma_v2.png)
+
+[Clique aqui](https://raw.githubusercontent.com/PedroCF87/suprema-test/main/docs/fluxograma_v2.png) para acessar a imagem do fluxograma.
+
+No primeiro momento o usuário apenas visualiza a tela de login e o frontend inicia a conexão via Websocket com o backend. O backend verifica se a origem da conexão está autorizada a acessar aos recursos e caso não seja, já encerra a conexão com uma mensagem de erro.
+
+O usuário preenche as credenciais e clica no botão enviar. Neste momento a autenticação dos métodos privados é realizada. A autenticação acontecendo com sucesso, os dados do usuário (login e senha) são processados via RPC pela função de login do backend. Caso os dados estejam corretos o usuário é autenticado.
 
 ## Como executar o projeto
 
