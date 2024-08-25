@@ -31,7 +31,37 @@ O backend foi desenvolvido usando o Node.js com a biblioteca NPM rpc-websockets.
 
 No primeiro momento o usuário apenas visualiza a tela de login e o frontend inicia a conexão via Websocket com o backend. O backend verifica se a origem da conexão está autorizada a acessar aos recursos e caso não seja, já encerra a conexão com uma mensagem de erro.
 
-O usuário preenche as credenciais e clica no botão enviar. Neste momento a autenticação dos métodos privados é realizada. A autenticação acontecendo com sucesso, os dados do usuário (login e senha) são processados via RPC pela função de login do backend. Caso os dados estejam corretos o usuário é autenticado.
+O usuário preenche as credenciais e clica no botão enviar. Neste momento a autenticação dos métodos privados é realizada.
+
+O frontend envia um Token JWT para o backend.
+
+### Exemplo
+
+#### Token JWT
+
+> eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiVUlEIjoiMDEwMjAzMzA0MDUiLCJpYXQiOjE3MjUyMzkwMjJ9.N0sYskeWrhLIeB5L6wbAsbqz8vJ7GTP-x7uNCL8bOEs
+
+```json
+{
+  "sub": "1234567890",
+  "UID": "01020330405",
+  "iat": 1725239022
+}
+```
+
+Obs.: É possível criar um novo token no site [jwt.io](https://jwt.io/). É preciso preencher o campo "your-256-bit-secret" com o valor da variável de ambiente chamada "JWT_SECRET" e o payload com um objeto no padrão abaixo:
+
+```json
+{
+  "sub": "1234567890",
+  "UID": "01020330405",
+  "iat": 1725239022
+}
+```
+
+Obs.: O campo "iat" é um timestamp com a data de validade do token.
+
+A autenticação acontecendo com sucesso, os dados do usuário (login e senha) são processados via RPC pela função de login do backend. Caso os dados estejam corretos o usuário é autenticado.
 
 ## Como executar o projeto
 
